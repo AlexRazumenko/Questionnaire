@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+</head>
+
+<body>
+
+<h1>Questionnaire</h1>
+<h2>Please answer the questions</h2><br>
+
+<form id = "questionForm" action = "/answer" method="post">
+
+    Input your name:
+    <input type="text" name="name">
+
+    &nbsp; Input your surname:
+    <input type="text" name="surname">
+
+    <br><p><b>Question 1: Do you have your own car?</b></p>
+    <select name="question1" size="1" form="questionForm">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+    </select>
+
+    <p><b>Question 2: What is your most frequently used public transport?</b></p>
+    <select name="question2" size="1" form="questionForm">
+        <option value="trolleybus">trolleybus</option>
+        <option value="tram">tram</option>
+        <option value="subway">subway</option>
+        <option value="bus">bus</option>
+        <option value="train">train</option>
+    </select>
+    <br>
+    <input type="submit" value="Send">
+</form>
+
+<br>
+
+<form id = "statisticsForm" action="/answer" method="get">
+    <b>Answers history:</b>
+    <input type="submit" value="View">
+</form>
+
+</body></html>
+
