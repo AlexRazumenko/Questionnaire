@@ -44,8 +44,8 @@ public class QuestionServlet extends HttpServlet {
         answers2.get(answer2).incrementAndGet();
 
         // adding record to statistics list
-        final String statisticsEntry = "<br>User <b>" + req.getParameter("name") + " " + req.getParameter("surname") +
-                "</b> answers: question 1 - " + answer1 + "; question 2 - " + answer2 + ".<br>";
+        final String statisticsEntry = "<br>User <b>" + req.getParameter("name") + " " + req.getParameter("surname") + " </b>(age: " + req.getParameter("age") +
+                ") answers: question 1 - " + answer1 + "; question 2 - " + answer2 + ".<br>";
         statistics.add(statisticsEntry);
 
         // generating results page
